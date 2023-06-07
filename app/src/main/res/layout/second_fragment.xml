@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvf2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人信息"
+        android:textSize="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/f2tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名称:"
+        android:textSize="40dp"
+        app:layout_constraintTop_toBottomOf="@id/tvf2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/f2et1"
+        android:textSize="30dp"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@id/f2tv1"
+        app:layout_constraintStart_toEndOf="@+id/f2tv1"
+        app:layout_constraintTop_toBottomOf="@id/tvf2" />
+
+
+    <TextView
+        android:id="@+id/f2tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码:"
+        android:textSize="40dp"
+        app:layout_constraintTop_toBottomOf="@id/f2tv1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <EditText
+        android:id="@+id/f2et2"
+        android:textSize="30dp"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@id/f2tv2"
+        app:layout_constraintStart_toEndOf="@+id/f2tv1"
+        app:layout_constraintTop_toBottomOf="@id/f2tv1" />
+
+    <TextView
+        android:id="@+id/f2tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别:"
+        android:textSize="40dp"
+        app:layout_constraintTop_toBottomOf="@id/f2tv2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <RadioGroup
+        android:id="@+id/f2rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toRightOf="@id/f2tv3"
+        app:layout_constraintTop_toBottomOf="@+id/f2tv2"
+        >
+        <RadioButton
+            android:id="@+id/f2rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:text="男"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/f2rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:text="女"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+<!--    <EditText-->
+<!--        android:id="@+id/f2et3"-->
+<!--        android:textSize="30dp"-->
+<!--        android:layout_width="293dp"-->
+<!--        android:layout_height="54dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/f2tv3"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/f2tv1"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/f2tv2" />-->
+
+    <TextView
+        android:id="@+id/f2tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年龄:"
+        android:textSize="40dp"
+        app:layout_constraintTop_toBottomOf="@id/f2tv3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <EditText
+        android:id="@+id/f2et4"
+        android:textSize="30dp"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@id/f2tv3"
+        app:layout_constraintStart_toEndOf="@+id/f2tv1"
+        app:layout_constraintTop_toBottomOf="@id/f2tv3" />
+
+    <TextView
+        android:id="@+id/f2tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="爱好:"
+        android:textSize="40dp"
+        app:layout_constraintTop_toBottomOf="@id/f2tv5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/f2et5"
+        android:textSize="30dp"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toRightOf="@id/f2tv3"
+        app:layout_constraintStart_toEndOf="@+id/f2tv1"
+        app:layout_constraintTop_toBottomOf="@id/f2tv5" />
+
+    <SeekBar
+        android:id="@+id/sbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2tv6"
+        ></SeekBar>
+
+    <TextView
+        android:id="@+id/f2tv7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="vip经验栏"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbar1"
+        >
+    </TextView>
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/pbar1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/f2tv7"-->
+<!--        ></ProgressBar>-->
+
+    <Gallery
+        android:id="@+id/gall1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2tv7"
+        >
+    </Gallery>
+
+    <Button
+        android:id="@+id/f2bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="修改信息"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
